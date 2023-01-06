@@ -6,8 +6,23 @@
 #define GAMESWINKEL_GAME_H
 
 
-class Game {
+class Game{
+    std::string title;
+    int releaseDate;
+    float originalPrice;
+public:
+    std::string getTitle();
+    void setTitle(std::string title);
 
+    int getReleaseDate();
+    void setReleaseDate(int releaseDate);
+
+    float getOriginalPrice();
+    void setOriginalPrice(float originalPrice);
+
+    float calculateCurrentPrice();
+
+    Game(std::string title, int releaseDate, float originalPrice);
 };
 
 
